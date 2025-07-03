@@ -52,7 +52,7 @@ struct AuxCloneWidget : VenomWidget {
     for(int i=0; i<EXPANDER_PORTS; i++){
       addInput(createInputCentered<PolyPort>(Vec(22.5f,61.5f+delta), module, AuxClone::EXP_POLY_INPUT+i));
       addOutput(createOutputCentered<PolyPort>(Vec(22.5f,226.5f+delta), module, AuxClone::EXP_POLY_OUTPUT+i));
-      addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(36.f, 214.f+delta), module, AuxClone::EXP_POLY_LIGHT+i*2));
+      addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(36.f, 214.f+delta), module, AuxClone::EXP_POLY_LIGHT+i*2));
       delta+=35.f;
     }  
     addChild(createLightCentered<SmallSimpleLight<YellowLight>>(Vec(6.f, 10.f), module, AuxClone::EXP_CONNECT_LIGHT));

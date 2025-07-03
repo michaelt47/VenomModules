@@ -191,7 +191,7 @@ struct PolyUnisonWidget : CloneModuleWidget {
       float x, y, delta=7.557f;
       for (li=0, end=8, x=11.160f; li<32; end+=8, x+=delta){
         for(y=275.593f; li < end; li+=2, y-=delta){
-          addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(x,y), module, PolyUnison::CHANNEL_LIGHTS+li));
+          addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(x,y), module, PolyUnison::CHANNEL_LIGHTS+li));
         }
       }
     }

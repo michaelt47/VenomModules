@@ -1389,21 +1389,21 @@ struct OscillatorWidget : VenomWidget {
     addParam(createLockableParamCentered<RotarySwitch<RoundBlackKnobLockable>>(Vec(29.f,157.f), module, Oscillator::OCTAVE_PARAM));
 
     addInput(createOverInputCentered<OverPort>(Vec(64.f, 158.f), module, Oscillator::REV_INPUT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(77.5f, 146.5f), module, Oscillator::REV_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(77.5f, 146.5f), module, Oscillator::REV_LIGHT));
 
     addParam(createLockableParamCentered<RoundSmallBlackKnobLockable>(Vec(29.f,206.f), module, Oscillator::EXP_PARAM));
     addParam(createLockableParamCentered<RoundSmallBlackKnobLockable>(Vec(64.f,206.f), module, Oscillator::LIN_PARAM));
     addInput(createOverInputCentered<OverPort>(Vec(29.f, 241.5f), module, Oscillator::EXP_INPUT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(42.5f, 230.f), module, Oscillator::EXP_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(42.5f, 230.f), module, Oscillator::EXP_LIGHT));
     addInput(createOverInputCentered<LinPort>(Vec(64.f, 241.5f), module, Oscillator::LIN_INPUT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(77.5f, 230.f), module, Oscillator::LIN_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(77.5f, 230.f), module, Oscillator::LIN_LIGHT));
     addChild(createLightCentered<SmallSimpleLight<RedLight>>(Vec(77.5f, 253.f), module, Oscillator::LIN_DC_LIGHT));
     addChild(createLightCentered<SmallSimpleLight<RedLight>>(Vec(50.5f, 253.f), module, Oscillator::LIN_NO_THRU0_LIGHT));
     addInput(createInputCentered<PolyPort>(Vec(29.f, 290.5f), module, Oscillator::EXP_DEPTH_INPUT));
     addInput(createInputCentered<PolyPort>(Vec(64.f, 290.5f), module, Oscillator::LIN_DEPTH_INPUT));
     addInput(createInputCentered<PolyPort>(Vec(29.f, 335.5f), module, Oscillator::VOCT_INPUT));
     addInput(createOverInputCentered<OverPort>(Vec(64.f, 335.5f), module, Oscillator::SYNC_INPUT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(77.5f, 324.f), module, Oscillator::SYNC_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(77.5f, 324.f), module, Oscillator::SYNC_LIGHT));
     
     float dx = 45.f;
     float dy = 59.f;
@@ -1426,7 +1426,7 @@ struct OscillatorWidget : VenomWidget {
           default:
             addInput(createOverInputCentered<OverPort>(Vec(130.f+dx*x,94.5f+dy*y), module, Oscillator::GRID_INPUT+y*5+x));
         }
-        addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(143.5f+dx*x, 83.f+dy*y), module, Oscillator::GRID_LIGHT+y*10+x*2));
+        addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(143.5f+dx*x, 83.f+dy*y), module, Oscillator::GRID_LIGHT+y*10+x*2));
       }
     }
     for (int x=0; x<4; x++) {

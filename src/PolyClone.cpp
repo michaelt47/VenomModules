@@ -106,8 +106,8 @@ struct PolyCloneWidget : CloneModuleWidget {
     y += dy*4.75f;
     int ly = y-2;
     for(int li = 0; li < 8; li++, ly-=dy/2.f){
-      addChild(createLightCentered<MediumLight<YellowRedLight<>>>(Vec(x-dy/5.f,ly), module, (PolyClone::CHANNEL_LIGHTS+li)*2));
-      addChild(createLightCentered<MediumLight<YellowRedLight<>>>(Vec(x+dy/5.f,ly), module, (PolyClone::CHANNEL_LIGHTS+li+8)*2));
+      addChild(createLightCentered<MediumLight<VenomYellowRedLight<>>>(Vec(x-dy/5.f,ly), module, (PolyClone::CHANNEL_LIGHTS+li)*2));
+      addChild(createLightCentered<MediumLight<VenomYellowRedLight<>>>(Vec(x+dy/5.f,ly), module, (PolyClone::CHANNEL_LIGHTS+li+8)*2));
     }
 
     y+=dy;

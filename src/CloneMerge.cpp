@@ -86,7 +86,7 @@ struct CloneMergeWidget : CloneModuleWidget {
     y+=dy*1.25f;
     for (int i=0; i<8; i++, y+=dy) {
       addInput(createInputCentered<MonoPort>(Vec(x,y), module, CloneMerge::MONO_INPUTS + i));
-      addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(x+dy*0.5f, y-dy*0.3f), module, CloneMerge::MONO_LIGHTS + i*2));
+      addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(x+dy*0.5f, y-dy*0.3f), module, CloneMerge::MONO_LIGHTS + i*2));
     }
     y+=dy*0.33f;
     addOutput(createOutputCentered<PolyPort>(Vec(x,y), module, CloneMerge::POLY_OUTPUT));

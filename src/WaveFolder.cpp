@@ -257,14 +257,14 @@ struct WaveFolderWidget : VenomWidget {
 
     addInput(createCVInputCentered<CVPort>(Vec(19.f, 257.5f), module, WaveFolder::PRE_INPUT));
     addChild(createLightCentered<SmallSimpleLight<YellowLight>>(Vec(5.5f,246.f), module, WaveFolder::PRE_VCA_LIGHT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(32.5f,246.f), module, WaveFolder::PRE_OVER_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(32.5f,246.f), module, WaveFolder::PRE_OVER_LIGHT));
 
     addInput(createCVInputCentered<CVPort>(Vec(71.f, 257.5f), module, WaveFolder::STAGE_INPUT));
     addChild(createLightCentered<SmallSimpleLight<YellowLight>>(Vec(57.5f,246.f), module, WaveFolder::STAGE_VCA_LIGHT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(84.5f,246.f), module, WaveFolder::STAGE_OVER_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(84.5f,246.f), module, WaveFolder::STAGE_OVER_LIGHT));
 
     addInput(createCVInputCentered<CVPort>(Vec(45.f, 287.5f), module, WaveFolder::BIAS_INPUT));
-    addChild(createLightCentered<SmallLight<YellowRedLight<>>>(Vec(58.5f,276.f), module, WaveFolder::BIAS_OVER_LIGHT));
+    addChild(createLightCentered<SmallLight<VenomYellowRedLight<>>>(Vec(58.5f,276.f), module, WaveFolder::BIAS_OVER_LIGHT));
     
     addInput(createInputCentered<PolyPort>(Vec(24.f, 335.5f), module, WaveFolder::POLY_INPUT));
     addOutput(createOutputCentered<PolyPort>(Vec(66.f, 335.5f), module, WaveFolder::POLY_OUTPUT));

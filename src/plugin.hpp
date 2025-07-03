@@ -596,7 +596,7 @@ struct RotarySwitch : TBase {
   }
 };
 
-struct DigitalDisplay : Widget {
+struct VenomDigitalDisplay : Widget {
   Module* module;
   std::string fontPath;
   std::string bgText;
@@ -646,7 +646,7 @@ struct DigitalDisplay : Widget {
   }
 };
 
-struct DigitalDisplay18 : DigitalDisplay {
+struct DigitalDisplay18 : VenomDigitalDisplay {
   DigitalDisplay18() {
     fontPath = asset::system("res/fonts/DSEG7ClassicMini-BoldItalic.ttf");
     textPos = Vec(22, 20);
@@ -656,7 +656,7 @@ struct DigitalDisplay18 : DigitalDisplay {
   }
 };
 
-struct DigitalDisplay188 : DigitalDisplay {
+struct DigitalDisplay188 : VenomDigitalDisplay {
   DigitalDisplay188() {
     fontPath = asset::system("res/fonts/DSEG7ClassicMini-BoldItalic.ttf");
     textPos = Vec(33.5, 20);
@@ -749,8 +749,8 @@ struct WhiteYellowRedLight : TBase {
 };
 
 template <typename TBase = GrayModuleLightWidget>
-struct YellowRedLight : TBase {
-  YellowRedLight() {
+struct VenomYellowRedLight : TBase {
+  VenomYellowRedLight() {
     this->addBaseColor(SCHEME_YELLOW);
     this->addBaseColor(SCHEME_RED);
   }
